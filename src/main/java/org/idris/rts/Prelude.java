@@ -548,8 +548,28 @@ public class Prelude {
      * @param o object to check
      * @return 1 if the object is {@code null} 0 otherwise
      */
-    public static int isNull(Object o) {	
+    public static long isNull(Object o) {	
         return (o == null ? 1 : 0);
+    }
+
+    /**
+     * Convert a Java boolean value to an Integer
+     * 
+     * @param b boolean value
+     * @return 1 for true and 0 for false
+     */
+    public static long boolToLong(boolean b) {	
+        return (b == true ? 1 : 0);
+    }
+
+    /**
+     * Convert a Java integer value to a boolean
+     * 
+     * @param v integer value
+     * @return false if <= 0, true otherwise
+     */
+    public static boolean longToBool(long v) {	
+        return (v <= 0 ? false : true);
     }
 
     /**
@@ -558,7 +578,7 @@ public class Prelude {
      * @param s string to check
      * @return 1 if the string is {@code null} 0 otherwise
      */
-    public static int isNullString(String s) {
+    public static long isNullString(String s) {
         return isNull(s);
     }
 
