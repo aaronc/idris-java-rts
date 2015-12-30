@@ -1471,15 +1471,15 @@ public class PrimFn {
         return builder.toString();
     }
     
-    public static int LStrLt(String x, String y) {
+    public static long LStrLt(String x, String y) {
         return (x.compareTo(y) < 0 ? 1 : 0);
     }
     
-    public static int LStrEq(String x, String y) {
+    public static long LStrEq(String x, String y) {
         return (x.equals(y) ? 1 : 0);
     }
     
-    public static int LStrLen(String x) {
+    public static long LStrLen(String x) {
         return x.length();
     }
     
